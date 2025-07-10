@@ -1,5 +1,18 @@
 # Social Links Profile
 
-This is the solution to a Frontend Mentor challenge to create a simple web component displaying a profile card with social media links.
+This is an implementation of the Frontend Mentor challenge: [Social Links Profile](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ).
 
-Design credit: [Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ)
+## Preview
+
+<img src="./challenge/finished-screenshot.png" alt="Social Links Profile finished project screenshot." />
+
+## Description
+
+[Frontend Mentor](https://www.frontendmentor.io/) provides challenges that developers can use to practice implementing designs as fully functional websites and applications.
+
+This project is an implementation of the design: [Social Links Profile](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). It features a responsive design and interactive button elements.
+
+This project was built with:
+
+- HTML
+- CSS
