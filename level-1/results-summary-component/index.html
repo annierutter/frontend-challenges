@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results Summary Component</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <div class="card-result">
+          <h1>Your Result</h1>
+          <div class="result-score-bubble">
+            <div class="result-score">
+              <span>76</span>
+              <span>of 100</span>
+            </div>
+          </div>
+          <div>
+            <h2 class="result-level">
+              <span class="sr-only">Your result level is: </span>Great
+            </h2>
+            <p class="result-description">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+        <div class="card-summary">
+          <h2 class="summary-subtitle">Summary</h2>
+          <dl class="summary-list">
+            <div class="summary-list-row red">
+              <dt>
+                <i aria-hidden="true">
+                  <img src="./assets/icon-reaction.svg" alt="" />
+                </i>
+                <span>Reaction </span><span class="sr-only">score</span>
+              </dt>
+              <dd>
+                <span class="list-score">80 </span>
+                <span>
+                  <span aria-hidden="true"> / </span>
+                  <span class="sr-only"> out of </span>
+                  <span>100</span>
+                </span>
+              </dd>
+            </div>
+            <div class="summary-list-row yellow">
+              <dt>
+                <i aria-hidden="true">
+                  <img src="./assets/icon-memory.svg" alt="" />
+                </i>
+                <span>Memory </span><span class="sr-only">score</span>
+              </dt>
+              <dd>
+                <span class="list-score">92 </span>
+                <span>
+                  <span aria-hidden="true"> / </span>
+                  <span class="sr-only"> out of </span>
+                  <span>100</span>
+                </span>
+              </dd>
+            </div>
+            <div class="summary-list-row green">
+              <dt>
+                <i aria-hidden="true">
+                  <img src="./assets/icon-verbal.svg" alt="" />
+                </i>
+                <span>Verbal </span><span class="sr-only">score</span>
+              </dt>
+              <dd>
+                <span class="list-score">61 </span>
+                <span>
+                  <span aria-hidden="true"> / </span>
+                  <span class="sr-only"> out of </span>
+                  <span>100</span>
+                </span>
+              </dd>
+            </div>
+            <div class="summary-list-row blue">
+              <dt>
+                <i aria-hidden="true">
+                  <img src="./assets/icon-visual.svg" alt="" />
+                </i>
+                <span>Visual </span><span class="sr-only">score</span>
+              </dt>
+              <dd>
+                <span class="list-score">73 </span>
+                <span>
+                  <span aria-hidden="true"> / </span>
+                  <span class="sr-only"> out of </span>
+                  <span>100</span>
+                </span>
+              </dd>
+            </div>
+          </dl>
+          <button class="summary-button">
+            <span class="button-text">Continue</span>
+            <div class="button-background"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
