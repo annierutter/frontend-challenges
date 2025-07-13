@@ -12,7 +12,7 @@
   <body>
     <main class="wrapper">
       <section class="card">
-        <div class="card-banner"></div>
+        <div class="card-banner" aria-hidden="true"></div>
         <div class="card-body">
           <div class="card-bio">
             <div class="card-name">
@@ -21,11 +21,12 @@
             </div>
             <p class="card-location">London</p>
           </div>
-          <img src="./assets/image-victor.jpg" alt="Profile of Victor Crest, wearing a jacket, with natural landscape in the background." />
+          <img class="card-profile" src="./assets/image-victor.jpg" alt="Profile of Victor Crest, wearing a jacket, with natural landscape in the background." />
         </div>
         <footer class="card-footer">
+          <h2 class="sr-only">User statistics</h2>
           <div class="card-footer-column">
-            <span>80K</div>
+            <span>80K</span>
             <span>Followers</span>
           </div>
           <div class="card-footer-column">
