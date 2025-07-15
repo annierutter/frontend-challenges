@@ -36,7 +36,9 @@ button {
   justify-content: center;
   align-items: center;
   /* TODO: background color/image */
-  background-color: hsl(var(--blue-100));
+  background: no-repeat top left / 100vw
+      url("./assets/pattern-background-mobile.svg"),
+    hsl(var(--blue-100));
 }
 
 .card {
@@ -169,6 +171,12 @@ button {
 }
 
 @media screen and (min-width: 450px) {
+  .wrapper {
+    background: no-repeat top left / 100vw
+        url("./assets/pattern-background-desktop.svg"),
+      hsl(var(--blue-100));
+  }
+
   .card-title {
     font-size: 1.75rem;
   }
