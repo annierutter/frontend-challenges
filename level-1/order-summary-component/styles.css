@@ -122,6 +122,13 @@ button {
   font-weight: 900;
   text-decoration: underline;
   font-size: 0.875rem;
+  transition: color 0.1s ease;
+}
+
+.plan-change-button:hover,
+.plan-change-button:focus {
+  text-decoration: none;
+  color: hsla(var(--blue-700), 0.7);
 }
 
 .card-cta,
@@ -141,12 +148,24 @@ button {
   padding: 1rem;
   border-radius: 0.75rem;
   box-shadow: 0px 8px 16px 8px hsla(var(--blue-700), 0.2);
+  transition: background-color 0.1s ease;
+}
+
+.card-cta:hover,
+.card-cta:focus {
+  background-color: hsla(var(--blue-700), 0.7);
 }
 
 .card-cancel {
   display: inline-block;
   color: hsl(var(--gray-600));
   margin-bottom: 0.5rem;
+  transition: color 0.1s ease;
+}
+
+.card-cancel:hover,
+.card-cancel:focus {
+  color: hsl(var(--blue-950));
 }
 
 @media screen and (min-width: 450px) {
