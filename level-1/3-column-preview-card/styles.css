@@ -1,0 +1,140 @@
+:root {
+  /* 
+    Set the font size to 15px, but as a percentage of
+    the default broser-set 16px, so the user can still
+    scale the font size in their browser settings.
+    
+    In this scale: 
+    16px is ~ 1.06rem
+    18px is ~ 1.12rem
+    24px is ~ 1.5rem
+    32px is ~ 2.12rem
+    etc
+  */
+  font-size: 93.75%;
+  font-family: "Lexend Deca", sans-serif;
+  /* HSL colors: */
+  --gold-500: 31, 95%, 32%;
+  --cyan-800: 184, 100%, 22%;
+  --green-950: 179, 100%, 13%;
+  /* paragraphs use white with 0.75 alpha */
+  --white: 0, 0%, 100%;
+  /* background, headings, buttons */
+  --gray-100: 0, 0%, 95%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 5rem 1.5rem;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: hsl(var(--gray-100));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.section {
+  padding: 3.25rem 3rem;
+  color: hsla(var(--white), 0.85);
+  max-width: 310px;
+  width: 100%;
+}
+
+.yellow {
+  /* background-color: hsl(var(--gold-500)); */
+  background-color: hsl(var(--gold-500));
+}
+
+.teal {
+  background-color: hsl(var(--cyan-800));
+}
+
+.green {
+  background-color: hsl(var(--green-950));
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
+.section-icon {
+  margin-bottom: 2.5rem;
+  user-select: none;
+  width: 64px;
+  height: 40px;
+  display: inline-block;
+}
+
+.section-heading {
+  font-family: "Big Shoulders", sans-serif;
+  color: hsl(var(--gray-100));
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  margin-bottom: 1.75rem;
+  letter-spacing: 0.03rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.section-description {
+  letter-spacing: 0.03rem;
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+}
+
+.section-cta {
+  background-color: hsl(var(--gray-100));
+  border: 2px solid hsl(var(--gray-100));
+  font: inherit;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.1s ease, color 0.1s ease;
+  vertical-align: middle;
+}
+
+.yellow .section-cta {
+  color: hsl(var(--gold-500));
+}
+
+.teal .section-cta {
+  color: hsl(var(--cyan-800));
+}
+
+.green .section-cta {
+  color: hsl(var(--green-950));
+}
+
+.section-cta:hover,
+.section-cta:focus {
+  background-color: hsla(var(--gray-100), 0);
+  color: hsl(var(--gray-100));
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .section-description {
+    margin-bottom: 5.5rem;
+  }
+}
