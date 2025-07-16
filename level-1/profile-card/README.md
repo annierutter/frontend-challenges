@@ -4,7 +4,7 @@ This is an implementation of the Frontend Mentor challenge: [Profile Card Compon
 
 ## Preview
 
-<img src="./challenge/finished-screenshot.png" alt="Profile card component finished project screenshot." />
+<img src="./challenge/completed-project-preview.png" alt="Profile card component finished project screenshot." />
 
 ## Description
 

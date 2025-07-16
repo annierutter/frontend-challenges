@@ -4,7 +4,7 @@ This is an implementation of the Frontend Mentor challenge: [Order Summary Compo
 
 ## Preview
 
-<img src="./challenge/finished-screenshot.png" alt="Order Summary Component finished project screenshot." />
+<img src="./challenge/completed-project-preview.png" alt="Order Summary Component finished project screenshot." />
 
 ## Description
 

@@ -4,7 +4,7 @@ This is an implementation of the Frontend Mentor challenge: [Social Links Profil
 
 ## Preview
 
-<img src="./challenge/finished-screenshot.png" alt="Social Links Profile finished project screenshot." />
+<img src="./challenge/completed-project-preview.png" alt="Social Links Profile finished project screenshot." />
 
 ## Description
 

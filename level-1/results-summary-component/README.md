@@ -4,7 +4,7 @@ This is an implementation of the Frontend Mentor challenge: [Results Summary Com
 
 ## Preview
 
-<img src="./challenge/finished-screenshot.png" alt="Results summary component finished project screenshot." />
+<img src="./challenge/completed-project-preview.png" alt="Results summary component finished project screenshot." />
 
 ## Description
 
