@@ -5,8 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Article Preview Component</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
   </head>
   <body>
+    <main class="wrapper">
+      <article class="article">
+        <header class="article-header">
+          <img
+            src="./assets/drawers.jpg"
+            alt="An interior design scene showing
+          two framed pictures and a vase on top of a green end table, with a
+          white brick wall in the background."
+            class="article-cover-image"
+          />
+        </header>
+        <div class="article-body">
+          <div class="article-main">
+            <h1 class="article-title">
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h1>
+            <p class="article-description">
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I've got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </div>
+          <footer class="article-footer">
+            <div class="footer-left">
+              <img
+                src="./assets/avatar-michelle.jpg"
+                alt="Michelle Appleton looking directly at the camera and smiling, wearing a jacket on a misty day."
+                class="article-avatar"
+              />
+              <div class="article-bio">
+                <p class="article-author">Michelle Appleton</p>
+                <time datetime="2020-06-28">28 Jun 2020</time>
+              </div>
+            </div>
+            <div class="footer-right">
+              <div class="article-share-box" id="shareBox">
+                <span>Share</span>
+                <a href="/">
+                  <span class="sr-only">Facebook</span>
+                  <img
+                    src="./assets/icon-facebook.svg"
+                    alt=""
+                    class="share-icon"
+                  />
+                </a>
+                <a href="/">
+                  <span class="sr-only">Twitter</span>
+                  <img
+                    src="./assets/icon-twitter.svg"
+                    alt=""
+                    class="share-icon"
+                  />
+                </a>
+                <a href="/">
+                  <span class="sr-only">Pinterest</span>
+                  <img
+                    src="./assets/icon-pinterest.svg"
+                    alt=""
+                    class="share-icon"
+                  />
+                </a>
+              </div>
+              <button class="article-share-button" id="shareButton">
+                <span class="sr-only">Share this post</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="13"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  class="share-button-icon"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </footer>
+        </div>
+      </article>
+    </main>
+
     <script src="main.js"></script>
   </body>
 </html>
