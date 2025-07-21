@@ -1,0 +1,129 @@
+:root {
+  --teal-100: 204, 43%, 93%;
+  --teal-500: 179, 62%, 43%;
+  --green-400: 71, 73%, 54%;
+  --gray-500: 218, 22%, 67%;
+  font-size: 100%;
+  font-family: Karla, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: hsl(var(--teal-100));
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 600px;
+  /* TODO: box-shadow */
+}
+
+.card-top {
+  padding: 2rem 1.5rem;
+}
+
+.card-heading {
+  color: hsl(var(--teal-500));
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.card-top h2 {
+  color: hsl(var(--green-400));
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.card-top p {
+  color: hsl(var(--gray-500));
+  line-height: 2;
+}
+
+.card-left {
+  padding: 1.5rem;
+  background-color: hsl(var(--teal-500));
+  color: white;
+}
+
+.card-left h2,
+.card-right h2 {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.card-price {
+  color: hsla(255, 0%, 100%, 0.5);
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.card-dollar {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.card-cta {
+  width: 100%;
+  display: inline-block;
+  font: inherit;
+  border: none;
+  background-color: hsl(var(--green-400));
+  color: white;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  /* TODO: Add box shadow */
+}
+
+.card-right {
+  padding: 1.5rem;
+  background-color: hsla(var(--teal-500), 0.85);
+  color: white;
+}
+
+.card-right li {
+  color: hsla(255, 0%, 100%, 0.7);
+  margin-bottom: 0.125rem;
+}
+
+@media screen and (min-width: 768px) {
+  /* TODO: scale up design */
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-top {
+    grid-column: 1 / 3;
+  }
+}
